@@ -1,10 +1,10 @@
-#  AeroTickets
+# ✈️ AeroTickets
 
 Sistema web para la compra de tiquetes aéreos desarrollado con Node.js, Express, MySQL, HTML, CSS y JavaScript.
 
 ---
 
-#  Descripción
+# 📌 Descripción
 
 AeroTickets es una plataforma web que permite:
 
@@ -19,7 +19,7 @@ El sistema fue desarrollado como proyecto académico para la asignatura de Ingen
 
 ---
 
-#  Tecnologías utilizadas
+# 🛠️ Tecnologías utilizadas
 
 ## Frontend
 - HTML5
@@ -37,7 +37,7 @@ El sistema fue desarrollado como proyecto académico para la asignatura de Ingen
 
 ---
 
-#  Estructura del proyecto
+# 📂 Estructura del proyecto
 
 ```bash
 AeroTickets/
@@ -54,25 +54,53 @@ AeroTickets/
 ├── server.js
 ├── package.json
 └── README.md
- Instalación del proyecto
-1. Clonar repositorio
+```
+
+---
+
+# ⚙️ Instalación del proyecto
+
+## 1. Clonar repositorio
+
+```bash
 git clone https://github.com/usuario/aerotickets.git
-2. Entrar a la carpeta
+```
+
+## 2. Entrar a la carpeta
+
+```bash
 cd aerotickets
-3. Instalar dependencias
+```
+
+## 3. Instalar dependencias
+
+```bash
 npm install
+```
 
 O instalar manualmente:
 
+```bash
 npm install express
 npm install mysql2
 npm install express-session
 npm install nodemon
- Configuración de la base de datos
-Crear base de datos
+```
+
+---
+
+# 🗄️ Configuración de la base de datos
+
+## Crear base de datos
+
+```sql
 CREATE DATABASE aerotickets;
 USE aerotickets;
-Tabla usuarios
+```
+
+## Tabla usuarios
+
+```sql
 CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100),
@@ -80,7 +108,11 @@ CREATE TABLE usuarios (
     contrasena VARCHAR(100),
     rol VARCHAR(20) DEFAULT 'cliente'
 );
-Tabla vuelos
+```
+
+## Tabla vuelos
+
+```sql
 CREATE TABLE vuelos (
     id INT AUTO_INCREMENT PRIMARY KEY,
     origen VARCHAR(100),
@@ -92,7 +124,11 @@ CREATE TABLE vuelos (
     sillas_disponibles INT,
     estado VARCHAR(20) DEFAULT 'disponible'
 );
-Tabla tiquetes
+```
+
+## Tabla tiquetes
+
+```sql
 CREATE TABLE tiquetes (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario_id INT,
@@ -105,63 +141,124 @@ CREATE TABLE tiquetes (
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id),
     FOREIGN KEY (vuelo_id) REFERENCES vuelos(id)
 );
-Ejecutar el proyecto
-Iniciar servidor
+```
+
+---
+
+# ▶️ Ejecutar el proyecto
+
+## Iniciar servidor
+
+```bash
 node server.js
+```
 
 o con nodemon:
 
+```bash
 npx nodemon server.js
- Abrir en navegador
+```
+
+---
+
+# 🌐 Abrir en navegador
+
+```bash
 http://localhost:3000
- Rutas principales
-Registro
+```
+
+---
+
+# 🔑 Rutas principales
+
+## Registro
+
+```http
 POST /api/auth/register
-Login
+```
+
+## Login
+
+```http
 POST /api/auth/login
-Logout
+```
+
+## Logout
+
+```http
 POST /api/auth/logout
-Ver sesión activa
+```
+
+## Ver sesión activa
+
+```http
 GET /api/auth/me
-Listar vuelos
+```
+
+## Listar vuelos
+
+```http
 GET /api/vuelos
-Comprar tiquete
+```
+
+## Comprar tiquete
+
+```http
 POST /api/tiquetes
-Historial de compras
+```
+
+## Historial de compras
+
+```http
 GET /api/tiquetes/historial
- Pruebas realizadas
+```
+
+---
+
+# 🧪 Pruebas realizadas
 
 Se realizaron pruebas usando:
 
-Navegador web
-Postman
-Casos probados
-Registro de usuarios
-Inicio de sesión
-Validación de credenciales
-Consulta de vuelos
-Compra de tiquetes
-Historial de compras
-Manejo de errores
- Funcionalidades implementadas
+- Navegador web
+- Postman
 
-✅ Registro de usuarios
-✅ Inicio de sesión
-✅ Cierre de sesión
-✅ Catálogo de vuelos
-✅ Filtros de búsqueda
-✅ Compra de tiquetes
-✅ Historial de compras
-✅ Validaciones frontend y backend
-✅ Integración con MySQL
+## Casos probados
 
- Integrantes
-Hernan Felipe Araujo Aranda
-Juan Gabriel Gutiérrez Trujillo
- Universidad
+- Registro de usuarios
+- Inicio de sesión
+- Validación de credenciales
+- Consulta de vuelos
+- Compra de tiquetes
+- Historial de compras
+- Manejo de errores
 
-Universidad Manuela Beltrán
-Ingeniería de Software
-Ingeniería Web
-Bogotá, Colombia
+---
+
+# ✅ Funcionalidades implementadas
+
+- Registro de usuarios
+- Inicio de sesión
+- Cierre de sesión
+- Catálogo de vuelos
+- Filtros de búsqueda
+- Compra de tiquetes
+- Historial de compras
+- Validaciones frontend y backend
+- Integración con MySQL
+
+---
+
+# 👨‍💻 Integrantes
+
+- Hernan Felipe Araujo Aranda
+- Juan Gabriel Gutiérrez Trujillo
+
+---
+
+# 🏫 Universidad
+
+Universidad Manuela Beltrán  
+Ingeniería de Software  
+Ingeniería Web  
+Bogotá, Colombia  
 2026
