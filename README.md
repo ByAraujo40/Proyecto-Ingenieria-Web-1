@@ -1,10 +1,10 @@
-# ✈️ AeroTickets
+#  AeroTickets
 
 Sistema web para la compra de tiquetes aéreos desarrollado con Node.js, Express, MySQL, HTML, CSS y JavaScript.
 
 ---
 
-# 📌 Descripción
+#  Descripción
 
 AeroTickets es una plataforma web que permite:
 
@@ -19,7 +19,7 @@ El sistema fue desarrollado como proyecto académico para la asignatura de Ingen
 
 ---
 
-# 🛠️ Tecnologías utilizadas
+#  Tecnologías utilizadas
 
 ## Frontend
 - HTML5
@@ -37,7 +37,7 @@ El sistema fue desarrollado como proyecto académico para la asignatura de Ingen
 
 ---
 
-# 📂 Estructura del proyecto
+#  Estructura del proyecto
 
 ```bash
 AeroTickets/
@@ -58,7 +58,7 @@ AeroTickets/
 
 ---
 
-# ⚙️ Instalación del proyecto
+#  Instalación del proyecto
 
 ## 1. Clonar repositorio
 
@@ -89,7 +89,7 @@ npm install nodemon
 
 ---
 
-# 🗄️ Configuración de la base de datos
+#  Configuración de la base de datos
 
 ## Crear base de datos
 
@@ -145,7 +145,7 @@ CREATE TABLE tiquetes (
 
 ---
 
-# ▶️ Ejecutar el proyecto
+#  Ejecutar el proyecto
 
 ## Iniciar servidor
 
@@ -161,7 +161,7 @@ npx nodemon server.js
 
 ---
 
-# 🌐 Abrir en navegador
+#  Abrir en navegador
 
 ```bash
 http://localhost:3000
@@ -169,7 +169,7 @@ http://localhost:3000
 
 ---
 
-# 🔑 Rutas principales
+#  Rutas principales
 
 ## Registro
 
@@ -215,7 +215,7 @@ GET /api/tiquetes/historial
 
 ---
 
-# 🧪 Pruebas realizadas
+#  Pruebas realizadas
 
 Se realizaron pruebas usando:
 
@@ -234,7 +234,7 @@ Se realizaron pruebas usando:
 
 ---
 
-# ✅ Funcionalidades implementadas
+#  Funcionalidades implementadas
 
 - Registro de usuarios
 - Inicio de sesión
@@ -248,7 +248,7 @@ Se realizaron pruebas usando:
 
 ---
 
-# 👨‍💻 Integrantes
+#  Integrantes
 
 - Hernan Felipe Araujo Aranda
 - Juan Gabriel Gutiérrez Trujillo
