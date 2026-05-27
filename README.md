@@ -255,7 +255,7 @@ Se realizaron pruebas usando:
 
 ---
 
-# 🏫 Universidad
+#  Universidad
 
 Universidad Manuela Beltrán  
 Ingeniería de Software  
